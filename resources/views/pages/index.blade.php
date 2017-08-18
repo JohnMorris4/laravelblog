@@ -2,10 +2,10 @@
 
 @section('content')
 
-
-    <h1>{{$title}}</h1>
-    {{--  <<h1>Welcome to the Laravel Application</h1>  --}}
-    <p>This is a Laravel application that was built from "The Laravel from Scratch" series.</p>
-    <p>Have a look around and please share if you find this series intesting</p>
-
+    <div class="jumbotron text-center">
+        <h1>{{$title}}</h1>   
+        <p>This is a Laravel application that was built from "The Laravel from Scratch" series.</p>
+        <p>Have a look around and please share if you find this series intesting</p>
+         <p><a class="btn btn-primary btn-lg" href="/login" role="button">Login</a> <a class="btn btn-success btn-lg" href="/register" role="button">Register</a></p>
+    </div>
 @endsection
