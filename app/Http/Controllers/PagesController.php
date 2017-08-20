@@ -7,7 +7,8 @@ use Illuminate\Http\Request;
 class PagesController extends Controller
 {
     public function index(){
-        $title = 'Welcome to the Laravel Application';
+        $title = 'Welcome To Laravel!';
+        //return view('pages.index', compact('title'));
         return view('pages.index')->with('title', $title);
     }
 
@@ -23,5 +24,4 @@ class PagesController extends Controller
         );
         return view('pages.services')->with($data);
     }
-
 }
